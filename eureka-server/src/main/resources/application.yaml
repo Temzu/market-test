@@ -6,10 +6,10 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
 
-#spring:
-#  cloud:
-#    config:
-#      uri: http://localhost:8090
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8081
 
 # spring.cloud.config.username=root
 # spring.cloud.config.password=s3cr3t
