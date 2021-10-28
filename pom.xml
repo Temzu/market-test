@@ -26,6 +26,8 @@
   <modules>
     <module>eureka-server</module>
     <module>core-lib</module>
+    <module>ms-product</module>
+    <module>ms-auth</module>
   </modules>
 
   <dependencies>
