@@ -14,7 +14,6 @@
   <artifactId>core-lib</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>core-lib</name>
-  <description>core-lib</description>
 
   <properties>
     <java.version>11</java.version>
@@ -43,13 +42,5 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
 </project>
