@@ -1,9 +1,10 @@
-## Marker
+## Project: Market
 ### Goals:
 - Using the microservice architecture
 - Сreate microservices: product, order, authorization
 - Using Spring Cloud
 - Storing JWT in Redis
+- Make simple frontend on angular
 
 ## Features
 - Spring Web, Rest, Data
