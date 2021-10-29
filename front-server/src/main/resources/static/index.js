@@ -10,7 +10,7 @@
 
   }
 
-  const contextPath = 'http://localhost:56045';
+  const contextPath = 'http://localhost:5555';
 
   function run($rootScope, $http, $localStorage) {
     if ($localStorage.currentUser) {
@@ -20,7 +20,7 @@
 })();
 
 angular.module('app').controller('indexController', function ($scope, $http, $localStorage, $location) {
-  const contextPath = 'http://localhost:56045';
+  const contextPath = 'http://localhost:5555';
 
   $scope.tryToAuth = function () {
 
