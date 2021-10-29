@@ -23,6 +23,11 @@ create
     on user_table (login);
 
 insert into role_table(name)
-values ('ROLE_ADMIN');
-insert into role_table(name)
-values ('ROLE_USER');
+values ('ROLE_ADMIN'),
+       ('ROLE_USER');
+
+-- пароль: 123
+INSERT INTO user_table (id, login, password, role_id)
+VALUES (1, 'ivan', '$2a$10$3ivPJN8MyXC/bb0y87FxzuYkzMByRuj555b4DfS3x7EtWM4tzX5u.', 2),
+       (2, 'petr', '$2a$10$3ivPJN8MyXC/bb0y87FxzuYkzMByRuj555b4DfS3x7EtWM4tzX5u.', 2),
+       (3, 'andrey', '$2a$10$3ivPJN8MyXC/bb0y87FxzuYkzMByRuj555b4DfS3x7EtWM4tzX5u.', 2);
