@@ -4,6 +4,7 @@ import com.temzu.market.msproduct.dtos.ProductDto;
 import com.temzu.market.msproduct.services.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,9 @@ public class ProductController {
 
   private final ProductService productService;
 
+
   @GetMapping
+//  @PreAuthorize("isAuthenticated()")
   public Page<ProductDto> findPage(
       @RequestParam MultiValueMap<String, String> params,
       @RequestParam(name = "page", defaultValue = "1") Integer page,
