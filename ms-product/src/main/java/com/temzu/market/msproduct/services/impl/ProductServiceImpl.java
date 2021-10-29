@@ -1,6 +1,6 @@
 package com.temzu.market.msproduct.services.impl;
 
-import com.temzu.market.msproduct.dtos.ProductDto;
+import com.temzu.market.routinglib.dtos.ProductDto;
 import com.temzu.market.msproduct.models.Product;
 import com.temzu.market.msproduct.models.mappers.ProductMapper;
 import com.temzu.market.msproduct.repositories.ProductRepository;
@@ -10,7 +10,6 @@ import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 

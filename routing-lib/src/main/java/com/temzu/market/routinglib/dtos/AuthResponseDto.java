@@ -1,4 +1,4 @@
-package com.temzu.market.msauth.dtos;
+package com.temzu.market.routinglib.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

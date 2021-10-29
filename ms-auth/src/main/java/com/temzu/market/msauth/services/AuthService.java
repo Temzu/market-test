@@ -1,8 +1,9 @@
 package com.temzu.market.msauth.services;
 
-import com.temzu.market.msauth.dtos.AuthRequestDto;
-import com.temzu.market.msauth.dtos.AuthResponseDto;
-import com.temzu.market.msauth.dtos.SignUpRequestDto;
+
+import com.temzu.market.routinglib.dtos.AuthRequestDto;
+import com.temzu.market.routinglib.dtos.AuthResponseDto;
+import com.temzu.market.routinglib.dtos.SignUpRequestDto;
 
 public interface AuthService {
 
