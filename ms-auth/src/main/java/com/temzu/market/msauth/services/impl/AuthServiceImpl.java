@@ -1,14 +1,14 @@
 package com.temzu.market.msauth.services.impl;
 
 import com.temzu.market.corelib.services.TokenService;
-import com.temzu.market.msauth.dtos.AuthRequestDto;
-import com.temzu.market.msauth.dtos.AuthResponseDto;
-import com.temzu.market.msauth.dtos.SignUpRequestDto;
 import com.temzu.market.corelib.model.UserInfo;
 import com.temzu.market.msauth.entities.User;
 import com.temzu.market.msauth.entities.mappers.UserMapper;
 import com.temzu.market.msauth.services.AuthService;
 import com.temzu.market.msauth.services.UserService;
+import com.temzu.market.routinglib.dtos.AuthRequestDto;
+import com.temzu.market.routinglib.dtos.AuthResponseDto;
+import com.temzu.market.routinglib.dtos.SignUpRequestDto;
 import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

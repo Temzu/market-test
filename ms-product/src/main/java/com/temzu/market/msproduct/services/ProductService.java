@@ -1,6 +1,6 @@
 package com.temzu.market.msproduct.services;
 
-import com.temzu.market.msproduct.dtos.ProductDto;
+import com.temzu.market.routinglib.dtos.ProductDto;
 import com.temzu.market.msproduct.models.Product;
 import java.util.Optional;
 import org.springframework.data.domain.Page;

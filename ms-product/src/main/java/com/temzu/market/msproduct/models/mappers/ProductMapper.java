@@ -1,6 +1,6 @@
 package com.temzu.market.msproduct.models.mappers;
 
-import com.temzu.market.msproduct.dtos.ProductDto;
+import com.temzu.market.routinglib.dtos.ProductDto;
 import com.temzu.market.msproduct.models.Product;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
