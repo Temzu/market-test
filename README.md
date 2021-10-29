@@ -1,4 +1,4 @@
-## Project: Marker
+## Marker
 ### Goals:
 - Using the microservice architecture
 - Сreate microservices: product, order, authorization
