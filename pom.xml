@@ -29,6 +29,7 @@
     <module>ms-product</module>
     <module>ms-auth</module>
     <module>routing-lib</module>
+    <module>front-server</module>
   </modules>
 
   <dependencies>
@@ -67,6 +68,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.5.6</version>
         <configuration>
           <excludes>
             <exclude>
