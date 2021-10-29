@@ -4,9 +4,11 @@
 - Сreate microservices: product, order, authorization
 - Using Spring Cloud
 - Storing JWT in Redis
-- Make simple frontend on angular
+- Make simple frontend on Angular
 
 ## Features
+- Java
+- HTML + JS + Angular
 - Spring Web, Rest, Data
 - Spring Security + JWT
 - Redis
