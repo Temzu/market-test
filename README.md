@@ -8,7 +8,7 @@
 
 ## Features
 - Java
-- HTML + JS + Angular
+- HTML + JS + AngularJS
 - Spring Web, Rest, Data
 - Spring Security + JWT
 - Redis
