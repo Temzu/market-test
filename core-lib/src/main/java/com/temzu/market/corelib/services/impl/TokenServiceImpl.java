@@ -61,4 +61,12 @@ public class TokenServiceImpl implements TokenService {
         .role(role)
         .build();
   }
+
+  @Override
+  public Long getUserId(String token) {
+    return Jwts.parser()
+        .setSigningKey(JWT_SECRET)
+        .parseClaimsJws(token)
+        .getBody().get(USERID_CLAIM, Long.class);
+  }
 }
