@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient
+@FeignClient("ms-auth")
 public interface AuthClient {
 
   @PostMapping("/signup")
@@ -15,5 +15,4 @@ public interface AuthClient {
 
   @PostMapping("/login")
   AuthResponseDto login(@RequestBody AuthRequestDto request);
-
 }

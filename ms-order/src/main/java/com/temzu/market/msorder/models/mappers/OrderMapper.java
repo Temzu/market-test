@@ -1,6 +1,6 @@
 package com.temzu.market.msorder.models.mappers;
 
-import com.temzu.market.msorder.dtos.OrderDto;
+import com.temzu.market.routinglib.dtos.OrderDto;
 import com.temzu.market.msorder.models.Order;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

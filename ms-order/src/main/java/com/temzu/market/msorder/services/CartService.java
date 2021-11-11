@@ -1,7 +1,7 @@
 package com.temzu.market.msorder.services;
 
-import com.temzu.market.msorder.dtos.CartDto;
 import com.temzu.market.msorder.models.Cart;
+import com.temzu.market.routinglib.dtos.CartDto;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -9,7 +9,7 @@ public interface CartService {
 
   Cart save(Cart cart);
 
-  CartDto findById(Long id);
+  Cart findById(UUID id);
 
   Optional<Cart> findByUserId(Long userId);
 
@@ -17,5 +17,7 @@ public interface CartService {
 
   void clearCart(UUID cartId);
 
-  UUID getCartForUser(Long userId, UUID cartUuid);
+  UUID findCartForUser(Long userId, UUID cartUuid);
+
+  CartDto findDtoById(UUID id);
 }
