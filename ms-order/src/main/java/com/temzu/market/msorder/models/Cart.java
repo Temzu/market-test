@@ -1,9 +1,8 @@
 package com.temzu.market.msorder.models;
 
-import com.temzu.market.corelib.exceptions.ResourceNotFoundException;
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
+import java.util.Objects;
 import java.util.UUID;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,13 +11,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.ToString.Exclude;
+import org.hibernate.Hibernate;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "carts")
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 @NoArgsConstructor
 public class Cart {
 
@@ -29,6 +36,7 @@ public class Cart {
   private UUID id;
 
   @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
+  @Exclude
   private List<CartItem> items;
 
   @Column(name = "price")
@@ -73,4 +81,20 @@ public class Cart {
     another.items.forEach(this::add);
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) {
+      return false;
+    }
+    Cart cart = (Cart) o;
+    return id != null && Objects.equals(id, cart.id);
+  }
+
+  @Override
+  public int hashCode() {
+    return getClass().hashCode();
+  }
 }
