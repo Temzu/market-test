@@ -1,4 +1,4 @@
-package com.temzu.market.msorder.dtos;
+package com.temzu.market.routinglib.dtos;
 
 import java.util.UUID;
 import lombok.Data;
